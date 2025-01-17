@@ -1,0 +1,8 @@
+name: Push workflow
+runner-name: ${{ github.actor }} pushed some branch
+
+on: push
+
+jobs:
+  first_job:
+    name: my first jobs

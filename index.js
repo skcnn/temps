@@ -3,9 +3,10 @@ import express from 'express'
 const app = express();
 
 app.get('', (req, res)=>{
-    res.send(req.socket.remoteAddress)
+    res.status(200).json({message: "hello"})
 })
 
-app.listen('8080', ()=>{
-    console.log('server listening on 8080')
-})
+
+export {
+    app
+}

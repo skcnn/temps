@@ -1,0 +1,11 @@
+name: Pull Request Workflow
+runner-name: ${{ github.actor }} created pull request
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  my_first_job:
+    name: My job 1
