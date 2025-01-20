@@ -18,10 +18,10 @@ jobs:
 
     steps:
       - name: checkout first
-        uses: actions/checkout@3
+        uses: actions/checkout@4
         with:
           persist-credentials: false
-          ref: ${{ inputs.DEPLOYMENT_BRANCH }}
+          ref: main
       - name: list directorties
         run: ls -al
 
