@@ -18,7 +18,8 @@ jobs:
 
     steps:
       - name: checkout first
-        uses: actions/checkout@4
+        uses: actions/checkout@3
+        
       - name: list directorties
         run: ls -al
 
