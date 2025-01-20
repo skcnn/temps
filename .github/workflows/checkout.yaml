@@ -24,4 +24,6 @@ jobs:
           ref: main
       - name: list directorties
         run: ls -al
+      - name: run tests
+        run: npx jest
 
