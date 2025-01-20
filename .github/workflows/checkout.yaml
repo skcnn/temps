@@ -1,7 +1,8 @@
 name: Running Runners
 
 on:
-  push: [main]
+  push:
+    branches: [main]
 
 jobs:
   first_job:
