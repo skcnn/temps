@@ -1,6 +1,6 @@
 name: Running Runners
 
-on: 
+on:
   push: [main]
 
 jobs:
