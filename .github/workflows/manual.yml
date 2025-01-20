@@ -1,0 +1,27 @@
+name: Manual workflow
+
+on:
+  workflow_dispatch:
+    inputs:
+      log_level:
+        description: log level
+        required: true
+        default: 'warning'
+        type: choice
+        options:
+          - info
+          - warning
+          - debug
+      tags:
+        description: test scenario tags
+        required: false
+        type: boolean
+
+jobs:
+  log-the-inputs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: running workflow log-the-inputs
+        run: |
+          echo "log level is ${{ inputs.log_level }}"
+          echo "tags is ${{inputs.tags}}"
