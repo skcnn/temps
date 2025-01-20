@@ -1,0 +1,12 @@
+name: Running Runners
+
+on: 
+  push: [main]
+
+jobs:
+  first_job:
+    name: My first job
+    runs-on: ubuntu-latest
+    steps:
+      - name: show it
+        run: ls -al
