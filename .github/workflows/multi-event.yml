@@ -2,8 +2,13 @@ name: Multi Event workflow
 runner-name: Multi Event Runner
 
 on:
-  push: [main, dev]
-  pull_request: [main]
+  push:
+    branches:
+      - main
+        dev
+  pull_request:
+    branches:
+      - main
 
 jobs:
   multi_event_job:
