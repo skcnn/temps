@@ -6,8 +6,8 @@ on:
     - cron: "*/1 * * * *"
 
 jobs:
-  name: my_first_job
+  hello_world:
     runs-on: ubuntu-latest
     steps:
-      - name: echo time
-        run: echo "the current time is $(date)"
+      - name: echoing time
+        run: echo "the time is $(date)"
