@@ -11,3 +11,14 @@ jobs:
     steps:
       - name: show it
         run: ls -al
+
+  second_job:
+    name: Second Job
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout first
+        uses: actions/checkout@3
+      - name: list directorties
+        run: ls -al
+
