@@ -19,7 +19,8 @@ jobs:
     steps:
       - name: checkout first
         uses: actions/checkout@3
-        
+        with:
+          ref: ${{ inputs.DEPLOYMENT_BRANCH }}
       - name: list directorties
         run: ls -al
 
