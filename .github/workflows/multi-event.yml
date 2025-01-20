@@ -1,5 +1,4 @@
 name: Multi Event workflow
-runner-name: Multi Event Runner
 
 on:
   push:
