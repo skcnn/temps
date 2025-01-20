@@ -1,0 +1,12 @@
+name: name for sachdule
+runner-name: runner name for schedule
+
+on:
+  schedule:
+    - cron: "*/1 * * * *"
+
+jobs:
+  runs-on: ubuntu-latest
+  steps:
+    - name: echo time
+      run: echo "the current time is $(date)"
