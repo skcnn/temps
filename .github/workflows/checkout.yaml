@@ -14,7 +14,7 @@ jobs:
 
   second_job:
     name: Second Job
-    runs-on: ubuntu-latest
+    runs-on: [ubuntu-latest, macos-latest]
 
     steps:
       - name: checkout first
